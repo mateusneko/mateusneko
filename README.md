@@ -1,9 +1,9 @@
 <h1 align="center">Hi 👋, I'm Mateus</h1>
 <h3 align="center">Java Developer</h3>
 
-- 🔭 I’m currently working on **MinimalsAPIs**
-- 🌱 I’m currently learning **Docker, Improving SQL Skills, Angular**
-- 💬 Ask me about **Java**
+- 🔭 I’m currently working on **Microservices**
+- 🌱 I’m currently learning **Docker, Improving SQL Skills and Apache Kafka**
+- 💬 Ask me about **Java & Spring Boot**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
