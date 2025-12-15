@@ -1,9 +1,9 @@
 <h1 align="center">Hi 👋, I'm Mateus</h1>
-<h3 align="center">Java Developer</h3>
+<h3 align="center">.NET C# &Java Developer</h3>
 
 - 🔭 I’m currently working on **Microservices**
 - 🌱 I’m currently learning **Docker, Improving SQL Skills and Apache Kafka**
-- 💬 Ask me about **Java & Spring Boot**
+- 💬 Ask me about **C# || Java**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
@@ -15,14 +15,14 @@
 <h3 align="left">Languages and Tools:</h3>
 <p></p>
 <p>
-  <!-- Microsoft Tools 
+  
    <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer">
     <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/microsoft-dot-net-icon.png" alt="dotnet" width="40" height="40">
-  </a> -->
+  </a>
 
- <!-- <a href="https://dotnet.microsoft.com/pt-br/learn/csharp" target="_blank" rel="noreferrer">
+ <a href="https://dotnet.microsoft.com/pt-br/learn/csharp" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/>
-  </a>-->
+  </a>
  <a href="https://www.java.com" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/>
   </a>
