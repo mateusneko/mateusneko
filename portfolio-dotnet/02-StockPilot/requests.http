@@ -1,0 +1,23 @@
+@host = http://localhost:5102
+@productId = COLE_AQUI_ID
+### Cadastro de item (preço em centavos)
+POST {{host}}/api/products
+Content-Type: application/json
+
+{"sku":"CABO-10MM","name":"Cabo de cobre 10 mm²","minimumStock":5,"unitPriceCents":2500}
+### Listar itens
+GET {{host}}/api/products
+### Entrada
+POST {{host}}/api/products/{{productId}}/movements
+Content-Type: application/json
+
+{"type":"Entry","quantity":20,"reason":"Recebimento de material"}
+### Saída
+POST {{host}}/api/products/{{productId}}/movements
+Content-Type: application/json
+
+{"type":"Exit","quantity":3,"reason":"Atendimento de equipe"}
+### Alertas
+GET {{host}}/api/products/low-stock
+### Histórico
+GET {{host}}/api/products/{{productId}}/movements

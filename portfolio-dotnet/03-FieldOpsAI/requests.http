@@ -1,0 +1,13 @@
+@host = http://localhost:5103
+@incidentId = COLE_AQUI_ID
+### Criar ocorrência fictícia
+POST {{host}}/api/incidents
+Content-Type: application/json
+
+{"location":"Laboratório de treinamento","description":"Simulação: cabo caído próximo a poste, risco de choque"}
+### Listar
+GET {{host}}/api/incidents
+### Classificar (OpenAI se configurado; regras sem chave)
+POST {{host}}/api/incidents/{{incidentId}}/triage
+### Revisão por humano
+POST {{host}}/api/incidents/{{incidentId}}/review

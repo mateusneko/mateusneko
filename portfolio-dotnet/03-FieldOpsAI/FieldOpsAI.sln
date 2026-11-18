@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FieldOpsAI.Core", "FieldOpsAI.Core\FieldOpsAI.Core.csproj", "{785DC516-D548-537B-B70D-6F8C65CCBD15}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FieldOpsAI.Infrastructure", "FieldOpsAI.Infrastructure\FieldOpsAI.Infrastructure.csproj", "{8F5609E3-329C-596A-B506-051FD6941D04}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FieldOpsAI.Api", "FieldOpsAI.Api\FieldOpsAI.Api.csproj", "{2C507FFA-0C47-548B-B230-2470DF519AA6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FieldOpsAI.Tests", "FieldOpsAI.Tests\FieldOpsAI.Tests.csproj", "{AE9795E6-C071-5826-8C93-0E065256E4F8}"
+EndProject
+Global
+  GlobalSection(SolutionConfigurationPlatforms) = preSolution
+    Debug|Any CPU = Debug|Any CPU
+    Release|Any CPU = Release|Any CPU
+  EndGlobalSection
+  GlobalSection(ProjectConfigurationPlatforms) = postSolution
+    {785DC516-D548-537B-B70D-6F8C65CCBD15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+    {785DC516-D548-537B-B70D-6F8C65CCBD15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+    {785DC516-D548-537B-B70D-6F8C65CCBD15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+    {785DC516-D548-537B-B70D-6F8C65CCBD15}.Release|Any CPU.Build.0 = Release|Any CPU
+    {8F5609E3-329C-596A-B506-051FD6941D04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+    {8F5609E3-329C-596A-B506-051FD6941D04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+    {8F5609E3-329C-596A-B506-051FD6941D04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+    {8F5609E3-329C-596A-B506-051FD6941D04}.Release|Any CPU.Build.0 = Release|Any CPU
+    {2C507FFA-0C47-548B-B230-2470DF519AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+    {2C507FFA-0C47-548B-B230-2470DF519AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+    {2C507FFA-0C47-548B-B230-2470DF519AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+    {2C507FFA-0C47-548B-B230-2470DF519AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+    {AE9795E6-C071-5826-8C93-0E065256E4F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+    {AE9795E6-C071-5826-8C93-0E065256E4F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+    {AE9795E6-C071-5826-8C93-0E065256E4F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+    {AE9795E6-C071-5826-8C93-0E065256E4F8}.Release|Any CPU.Build.0 = Release|Any CPU
+  EndGlobalSection
+EndGlobal

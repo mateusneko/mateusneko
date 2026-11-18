@@ -1,0 +1,28 @@
+@host = http://localhost:5101
+@token = COLE_AQUI_O_ACCESS_TOKEN
+@taskId = COLE_AQUI_O_ID
+### Cadastro
+POST {{host}}/api/auth/register
+Content-Type: application/json
+
+{"name":"Mateus Demo","email":"teste@example.com","password":"TesteForte2026!"}
+### Login
+POST {{host}}/api/auth/login
+Content-Type: application/json
+
+{"email":"teste@example.com","password":"TesteForte2026!"}
+### Criar tarefa
+POST {{host}}/api/tasks
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{"title":"Estudar injeção de dependência","description":"Separar Controllers e Services"}
+### Listar
+GET {{host}}/api/tasks?page=1&pageSize=10
+Authorization: Bearer {{token}}
+### Concluir
+PATCH {{host}}/api/tasks/{{taskId}}/status
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{"status":"Done"}

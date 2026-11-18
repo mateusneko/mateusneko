@@ -1,0 +1,33 @@
+name: CI .NET 10
+on:
+  push:
+    paths:
+      - 'portfolio-dotnet/**'
+      - '.github/workflows/portfolio-dotnet-ci.yml'
+  pull_request:
+    paths:
+      - 'portfolio-dotnet/**'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - folder: portfolio-dotnet/01-TaskFlow
+            project: TaskFlow
+          - folder: portfolio-dotnet/02-StockPilot
+            project: StockPilot
+          - folder: portfolio-dotnet/03-FieldOpsAI
+            project: FieldOpsAI
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Restore
+        run: dotnet restore ${{ matrix.folder }}/${{ matrix.project }}.Tests/${{ matrix.project }}.Tests.csproj
+      - name: Test
+        run: dotnet test ${{ matrix.folder }}/${{ matrix.project }}.Tests/${{ matrix.project }}.Tests.csproj --no-restore --configuration Release
+      - name: Build API
+        run: dotnet build ${{ matrix.folder }}/${{ matrix.project }}.Api/${{ matrix.project }}.Api.csproj --configuration Release

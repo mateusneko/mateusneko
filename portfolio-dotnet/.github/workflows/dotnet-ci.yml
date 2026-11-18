@@ -1,0 +1,28 @@
+name: CI .NET 10
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - folder: 01-TaskFlow
+            project: TaskFlow
+          - folder: 02-StockPilot
+            project: StockPilot
+          - folder: 03-FieldOpsAI
+            project: FieldOpsAI
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Restore
+        run: dotnet restore ${{ matrix.folder }}/${{ matrix.project }}.Tests/${{ matrix.project }}.Tests.csproj
+      - name: Test
+        run: dotnet test ${{ matrix.folder }}/${{ matrix.project }}.Tests/${{ matrix.project }}.Tests.csproj --no-restore --configuration Release
+      - name: Build API
+        run: dotnet build ${{ matrix.folder }}/${{ matrix.project }}.Api/${{ matrix.project }}.Api.csproj --configuration Release
